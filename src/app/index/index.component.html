@@ -1,10 +1,5 @@
-
-<h1>
-  {{ title }}!
-</h1>
-
-
 <ul class='list-products'>
+  <h1> {{ title }}! </h1>
   <li *ngFor="let product of products?.products" class='product__item'>
     <a routerLink="/details/{{product.sku}}" routerLinkActive="active" class='product__item--link'>
       <img src={{product.media}} class='product__item--img' />
