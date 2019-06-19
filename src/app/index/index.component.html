@@ -1,0 +1,17 @@
+
+<h1>
+  {{ title }}!
+</h1>
+
+
+<ul class='list-products'>
+  <li *ngFor="let product of products?.products" class='product__item'>
+    <a routerLink="/details/{{product.sku}}" routerLinkActive="active" class='product__item--link'>
+      <img src={{product.media}} class='product__item--img' />
+    </a>
+    <h3 class='product__item--name'>{{product.name}}</h3>
+    <div class='product__item--sku'>{{product.sku}}</div>
+    <p class='product__item--description'>{{product.description}}</p>
+    <div class='product__item--amount'>{{product.amount}}</div>
+  </li>
+</ul>

@@ -1,0 +1,14 @@
+<h1>
+  {{ title }}!
+</h1>
+
+<div class='details__prod'>
+  <a routerLink="/" routerLinkActive="active" class='product__item--link'>Voltar</a>
+
+  <hr>
+  <h1 class='product__item--name'>{{productSelect?.name}}</h1>
+  <img src={{productSelect?.media}} class='product__item--img' />
+  <div class='product__item--sku'>{{productSelect?.sku}}</div>
+  <p class='product__item--description'>{{productSelect?.description}}</p>
+  <div class='product__item--amount'>{{productSelect?.amount}}</div>
+</div>
